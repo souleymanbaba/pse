@@ -14,8 +14,8 @@
 
   <!-- css for table-data -->
   <link rel="stylesheet" type="text/css" href="CSS/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="CSS/data_table.css">
-  <link rel="stylesheet" href="CSS/data_table_boostrapp.css">
+  <!-- <link rel="stylesheet" href="CSS/data_table.css">
+  <link rel="stylesheet" href="CSS/data_table_boostrapp.css"> -->
 
   
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -112,10 +112,16 @@
             <i class="mdi mdi-clipboard-text menu-icon"></i>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mise_a_jour.php">
+            <span class="menu-title">Mise à jour</span>
+            <i class="mdi mdi-reload menu-icon"></i>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- partiel -->
-    
+
     <!-- plugins:js -->
     <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
