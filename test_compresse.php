@@ -44,20 +44,7 @@ if ($zip->open($zipFileName, ZipArchive::CREATE) === TRUE) {
     echo 'Impossible de créer le fichier ZIP';
 }
 ?>
-<?php
-// $zip = new ZipArchive;
-// $zipFileName = 'output.zip'; // Chemin vers le fichier ZIP
-// $extractPath = 'extract/'; // Chemin où extraire les fichiers
 
-// if ($zip->open($zipFileName) === TRUE) {
-//     // Extraction des fichiers dans le dossier spécifié
-//     $zip->extractTo($extractPath);
-//     $zip->close();
-//     echo 'Extraction réussie.';
-// } else {
-//     echo 'Erreur lors de l\'ouverture du fichier ZIP.';
-// }
-?>
 <?php
 $url = 'https://chahid.info/pse/receive.php'; // URL de l'API cible
 $filePath = 'output.zip'; // Chemin du fichier compressé
@@ -80,8 +67,6 @@ curl_close($ch);
 // Afficher la réponse
 echo $response;
 
-session_start();
 
-    $_SESSION['envoie_reussi'] = true;
-    header("Location:admin/mise_a_jour.php");
+    header("Location:test_exporet.php");
 ?>

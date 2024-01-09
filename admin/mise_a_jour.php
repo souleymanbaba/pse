@@ -45,5 +45,8 @@ if (isset($_SESSION['envoie_reussi']) && $_SESSION['envoie_reussi'] === true) {
 
     // Supprimer l'indicateur de succès de la session
     unset($_SESSION['envoie_reussi']);
+    // header("Location:../test_exporet.php");
+
 }
+
 ?>
