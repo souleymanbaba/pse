@@ -33,8 +33,9 @@ if($_SESSION["role"]!="admin"){
             if( !empty($matricule) && !empty($semestre)  && !empty($annee) && !empty($nom) && !empty($prenom) && !empty($Date_naiss) && !empty($lieu_naiss)  && !empty($email) ){
                 $req = mysqli_query($conn, "UPDATE etudiant SET  matricule = '$matricule' , id_semestre = '$semestre'  , annee = '$annee' , nom = '$nom', prenom = '$prenom', Date_naiss = '$Date_naiss', lieu_naiss = '$lieu_naiss', email = '$email' WHERE id_etud = '$id_etud'");
                 if($req){
-                    header("location: etudiant.php");
                     $_SESSION['modifier_reussi'] = true;
+                    header("location: etudiant.php");
+                    
                 }else {
                     $message = $semestre."etudiant non modifié";
                 }

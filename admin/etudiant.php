@@ -1,3 +1,5 @@
+
+
 <?php
 session_start();
 $email = $_SESSION['email'];
@@ -8,10 +10,8 @@ include_once "../connexion.php";
 include_once 'nav_bar.php';
 
 $req = mysqli_query($conn, "SELECT * FROM etudiant INNER JOIN semestre USING(id_semestre) ORDER by matricule asc;");
-?>
 
-  <!-- end css for table-data -->
-  <script src="../JS/sweetalert2.js"></script>
+?>
 
 
   
@@ -77,7 +77,7 @@ if (isset($_SESSION['ajout_reussi']) && $_SESSION['ajout_reussi'] === true) {
     echo "<script>
     Swal.fire({
         title: 'Ajout réussi !',
-        text: 'L'étudiant a été ajouté avec succès.',
+        text: 'L\'étudiant a été ajouté avec succès.',
         icon: 'success',
         confirmButtonColor: '#3099d6',
         confirmButtonText: 'OK'
@@ -92,7 +92,7 @@ if (isset($_SESSION['supp_reussi']) && $_SESSION['supp_reussi'] === true) {
     echo "<script>
     Swal.fire({
         title: 'Suppression réussie !',
-        text: 'L'étudiant a été supprimé avec succès.',
+        text: 'L\'étudiant a été supprimé avec succès.',
         icon: 'success',
         confirmButtonColor: '#3099d6',
         confirmButtonText: 'OK'
@@ -107,7 +107,7 @@ if (isset($_SESSION['modifier_reussi']) && $_SESSION['modifier_reussi'] === true
     echo "<script>
     Swal.fire({
         title: 'Modification réussie !',
-        text: 'L'étudiant a été modifié avec succès.',
+        text: 'L\'étudiant a été modifié avec succès.',
         icon: 'success',
         confirmButtonColor: '#3099d6',
         confirmButtonText: 'OK'
@@ -141,28 +141,6 @@ if (isset($_SESSION['modifier_reussi']) && $_SESSION['modifier_reussi'] === true
         });
     });
 
-    $(document).ready(function () {
-        $('.search-text').on('input', function () {
-            var search = $(this).val();
-            if (search != '') {
-                $.ajax({
-                    url: 'etudiant.php',
-                    method: 'POST',
-                    data: {search: search},
-                    success: function (response) {
-                        $('tbody').html(response);
-                    }
-                });
-            } else {
-                $.ajax({
-                    url: 'etudiant.php',
-                    method: 'POST',
-                    success: function (response) {
-                        $('tbody').html(response);
-                    }
-                });
-            }
-        });
-    });
+
 </script>
 

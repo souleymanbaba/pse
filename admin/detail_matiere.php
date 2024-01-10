@@ -14,7 +14,7 @@ $id_matiere = $_GET['id_matiere'];
 
 
 $req_detail = "SELECT DISTINCT id_matiere, code, matiere.libelle,
-specialite, charge, nom_semestre,
+specialite, nom_semestre,
 nom_module FROM matiere INNER JOIN 
 semestre USING(id_semestre) INNER JOIN
 module USING(id_module) WHERE id_matiere = $id_matiere";
@@ -34,7 +34,6 @@ while($row=mysqli_fetch_assoc($req)){
                     <?php echo "<strong class='font-weight-bold'>Code de la matiere : </strong>". $row['code']; ?><br><br>
                         <?php echo "<strong class='font-weight-bold'>Libellè : </strong>". $row['libelle']; ?><br><br>
                         <?php echo "<strong class='font-weight-bold'> Specialite : </strong>" . $row['specialite']; ?><br><br>
-                        <?php echo "<strong class='font-weight-bold'> Charge de la matière : </strong>" . $row['charge']; ?><br><br>
                         <?php echo "<strong class='font-weight-bold'> Module : </strong>" . $row['nom_module']; ?><br><br>
                         <?php echo "<strong class='font-weight-bold'> Semestre : </strong>" . $row['nom_semestre']; ?><br><br>
                         
@@ -93,7 +92,7 @@ while($row=mysqli_fetch_assoc($req)){
               </div>
               <?php
                     $req_detail = "SELECT DISTINCT id_matiere, code, matiere.libelle,
-                    specialite, charge, nom_semestre,
+                    specialite,  nom_semestre,
                     nom_module FROM matiere INNER JOIN 
                     semestre USING(id_semestre) INNER JOIN
                     module USING(id_module) WHERE id_matiere = $id_matiere";

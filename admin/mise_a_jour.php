@@ -21,7 +21,7 @@ include_once 'nav_bar.php';
                         <div class="card-body">
                             <h4 class="card-title">Mise à jour :</h4>
                             <div style="display: flex; justify-content: space-between;">
-                                <a href="../test_compresse.php" class="btn btn-gradient-danger btn-icon-text"><i class="mdi mdi-reload btn-icon-prepend"></i> Mise à jour </a>
+                                <a href="../test_compresse.php" class="btn btn-gradient-danger btn-icon-text"><i class="mdi mdi-sync btn-icon-prepend"></i> Mise à jour </a>
                             </div>
                         </div>
                     </div>

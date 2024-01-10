@@ -14,14 +14,8 @@
 
   <!-- css for table-data -->
   <link rel="stylesheet" type="text/css" href="CSS/dataTables.bootstrap4.min.css">
-  <!-- <link rel="stylesheet" href="CSS/data_table.css">
-  <link rel="stylesheet" href="CSS/data_table_boostrapp.css"> -->
 
-  
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  <!-- end css for table-data -->
-  <script src="../JS/sweetalert2.js"></script>
+<script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 </head>
 
@@ -115,7 +109,7 @@
         <li class="nav-item">
           <a class="nav-link" href="mise_a_jour.php">
             <span class="menu-title">Mise à jour</span>
-            <i class="mdi mdi-reload menu-icon"></i>
+            <i class="mdi mdi-sync menu-icon"></i>
           </a>
         </li>
       </ul>

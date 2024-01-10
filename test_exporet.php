@@ -5,7 +5,7 @@ $dbPassword = '';
 $dbName = 'pse'; 
 
 $fileName = 'backup-' . date('Y-m-d') . '.sql';
-$filePath = 'C:\\Users\\HP_LAPTOP\\Downloads\\' . $fileName;
+$filePath = 'C:\\Users\\lapto\\Downloads\\' . $fileName;
 
 // Supprimer un fichier existant avant de créer un nouveau
 if (file_exists($filePath)) {
