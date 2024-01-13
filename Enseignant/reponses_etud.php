@@ -94,6 +94,9 @@ $row2 = mysqli_fetch_assoc($req2);
                     <a href="exporter_note.php?id_sous=<?= $id_sous ?>&id_matiere=<?= $row_sous['id_matiere'] ?>" class="btn btn-primary">Exporter les notes</a>
                 </div>
                 <div>
+                    <a href="telecharger_fichiers_reponses.php?id_sous=<?= $id_sous ?>&id_matiere=<?= $row_sous['id_matiere'] ?>" class="btn btn-primary">Telecharger tous les reponses</a>
+                </div>
+                <div>
                     <form action="" method="POST">
                         <input type="submit" class="btn btn-gradient-primary ml-25" value="Envoyer les Notes" name="enoyer_note">
                     </form>
