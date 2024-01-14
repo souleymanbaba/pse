@@ -84,7 +84,7 @@ CREATE TABLE `type_soumission`(
 CREATE TABLE `soumission` (
 `id_sous` int(10) PRIMARY KEY AUTO_INCREMENT ,
 `titre_sous` varchar(50),
-`description_sous` varchar(50) ,
+`description_sous` varchar(5000) ,
 `person_contact` varchar(100) DEFAULT NULL,
 `id_ens` int(10) ,
 `date_debut` datetime NOT NULL,

@@ -143,7 +143,7 @@ $row = mysqli_fetch_assoc($req);
                         ?>
                         <h4>
                             <p><?php echo "<strong>Titre : </strong>" . $row['titre_sous']; ?></p>
-                            <p><?php echo "<strong>Description : </strong>" . $row['description_sous'];  ?></p>
+                            <textarea style="width: 450px;height: 150px;"><?php echo  $row['description_sous'];  ?></textarea>
                             <p><?php echo "<strong>Date de  début : </strong>" . $row['date_debut']; ?></p>
                             <p><?php echo "<strong>Date de  fin : </strong>" . $row['date_fin']; ?></p>
                             <p><?php echo "<strong>Pour plus des informations : </strong>" . $row['person_contact']; ?></p>
